@@ -1,0 +1,20 @@
+body{
+    text-align: center;
+}
+input{
+    width: 60%;
+}
+#results{
+
+}
+
+.card{
+    display: inline-block;
+    margin-right: 5vw;
+    margin-bottom: 5vw;
+}
+
+.pic{
+    height: 10rem;
+    width: 10rem;
+}
