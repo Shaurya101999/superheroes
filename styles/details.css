@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&display=swap');
+
+body{
+    background-image: url('../images/heroes.jpg');
+    color: white;
+    font-family: 'Comic Neue', cursive;
+}
+
+#name{
+    text-decoration-line: underline;
+    text-align: center;
+}
+#container, #container1{
+    display: flex;
+    background: transparent;
+    border: none;
+}
+
+#container div{
+    /* display: flex; */
+    /* height: 60vh; */
+    float: left;
+}
+div{
+    /* flex-direction: column;    */
+    background-color: black;
+    opacity: 0.9;
+    color: rgb(252, 252, 252);
+    margin: 1vw;
+    padding: 1vw;
+    border-radius: 10px;
+    border: 2px solid white;
+    display: block;
+}
+
+#image img{
+    opacity: 1;
+    border-radius: 10px;
+}
+#image{
+    text-align: center;
+}
+#img{
+    width: 400;
+    height: 400;
+}
+nav{
+    float: right;
+}
+@media (max-width: 750px){
+    div{
+        flex-direction: column;
+        height: auto;
+    }
+  }
+  @media (max-width: 750px){
+    div{
+        flex-direction: column;
+        height: auto;
+    }
+  }
+@media (max-width: 450px){
+    #image{
+        border: none;
+        /* width: 100vw; */
+        background: none;
+        float: left;
+        opacity: 1;
+    }
+    
+    div{
+        flex-direction: column;
+        height: auto;
+    }
+
+    
+  }
+ 

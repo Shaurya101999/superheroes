@@ -1,23 +1,21 @@
-body{
+ body{
     text-align: center;
     background-color: rgb(5, 13, 54);
-    background-image: url('../images/heroes.jpg');
+    background-image: url('../images/basic1.jfif');
 }
-input{
+/*input{
     width: 60%;
 }
 button#button-addon2 {
     color: white;
     background-color: cornflowerblue;
-}
+} */
 
 .card{
     display: inline-block;
     margin-right: 5vw;
     margin-bottom: 5vw;
-    border-radius: 10px;
-}
-.pic{
+    margin-top: 5vw;
     border-radius: 10px;
 }
 
@@ -27,12 +25,14 @@ button#button-addon2 {
 }
 
 .pic{
-    height: 10rem;
-    width: 10rem;
+    height: 12rem;
+    width: 12rem;
+    border-radius: 10px;
 }
-.container{
+button{
+    float: right;
+}
+h1{
+    text-decoration: underline;
     color: white;
-    background-color: black;
-    opacity: 0.7;
-    border-radius: 20px;
 }
