@@ -1,4 +1,6 @@
-// localStorage.clear();
+// localStorage.clear(); to clear all localstorage 
+
+// imp constant values
 const access_token = '1272689969873293';
 const url = 'https://superheroapi.com/api.php/'+access_token+'/';
 const not_fav = '../images/black.png'
@@ -6,6 +8,7 @@ const fav = '../images/red.png'
 
 checkList();
 
+// to check or get the ids of favourite superheroes
 function checkList(){
     let favourites = JSON.parse(localStorage.getItem('favHeroes'));
     if( favourites.length == 0 ){
@@ -18,6 +21,7 @@ function checkList(){
     });
 }
 
+// API call to search hero based on id
 async function search( id ){
     let response = await fetch(url+id);
     if(response.ok){
@@ -28,22 +32,17 @@ async function search( id ){
     }
 }
 
+// function to render data on favourites page
 function renderData(data){
     if(data.response== 'error'  ){
         document.getElementById('results').innerHTML = data.error ;
     }
-    else{
-       
-        // let container = document.getElementById('container');
-
-        // let results = document.createElement('div');
-        // results.id = 'results';
-        // container.appendChild(results);
-        
+    else{ 
         results.appendChild(card(data));
-        
     }    
 }
+
+// data in form of card
 function card(data){
     let card = document.createElement('div') ;
     card.className = 'card' ;
@@ -74,6 +73,8 @@ function card(data){
        
         return card;
 }
+
+// to get the details of fav superhero or to mark it as not favourite
 document.addEventListener('click' , (event)=> {
     if(event.target.id == 'details'){
        let id = event.target.parentNode.parentNode.id ;

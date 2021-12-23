@@ -23,7 +23,9 @@ button#button-addon2 {
     cursor: pointer;
     color: red;
 }
-
+#fav:hover{
+    cursor: pointer;
+}
 .pic{
     height: 12rem;
     width: 12rem;

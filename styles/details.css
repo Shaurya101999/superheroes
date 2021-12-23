@@ -15,7 +15,9 @@ body{
     background: transparent;
     border: none;
 }
-
+#fav:hover{
+    cursor: pointer;
+}
 #container div{
     /* display: flex; */
     /* height: 60vh; */
